@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int t,n,ans,d,p;
+    cin>>t;
+    while(t--)
+    {
+        cin>>n;
+        ans=0;
+        while(1)
+        {
+            d=(n/10)*10;
+            ans+=d;
+            p=n-d;
+            n=(n/10)+p;
+            if(n<10)
+            {
+                ans+=n;
+                break;
+            }
+        }
+        cout<<ans<<endl;
+    }
+    return 0;
+}
