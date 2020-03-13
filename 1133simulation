@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int a;
+	cin>>a;
+	while(a--)
+	{
+	  long int b,c,d,e,x;
+	   cin>>b>>c>>d>>e;
+	  if(d%c==0)
+	  {
+	  	x=(b/c)-(((e/c)-(d/c))+1);
+	  	cout<<x<<endl;
+	  }
+	  else
+       {
+	  	x=(b/c)-((e/c)-(d/c));
+	  	cout<<x<<endl;
+	  }
+	}
+	return 0;
+}
