@@ -1,0 +1,14 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    long long int m1=0,a,b,x,y,z;
+    cin>>a>>b;
+    cin>>x>>y>>z;
+    if(a<(2*x+y))
+        m1+=((2*x+y)-a);
+    if(b<(3*z+y))
+        m1+=((3*z+y)-b);
+    cout<<m1<<endl;
+    return 0;
+}
