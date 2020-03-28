@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    long long int t,j,n,ck=0,i,a=0,b=0;
+    cin>>n;
+    long long int arr[n];
+    for(i=0; i<n; i++){
+        cin>>arr[i];
+        if(arr[i]==1)
+            a++;
+        if(arr[i]==2)
+            b++;
+    }
+    if(a>b){
+        ck = b+(a-b)/3;
+        cout<<ck<<endl;
+    }
+    else
+        cout<<a<<endl;
+}
