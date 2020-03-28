@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int a,b,c[101];
+	cin>>a>>b;
+	for(int i=0;i<a;i++)
+	{
+		cin>>c[i];
+	}
+	int r=1000000;
+	for(int i=0;i<a;i++)
+	{
+		if(b%c[i]==0)
+		{
+			r=min(r,b/c[i]);
+		}
+	}
+	cout<<r<<endl;
+	return 0;
+}
