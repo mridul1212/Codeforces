@@ -1,0 +1,32 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int a,b,ar[101],m1,m2;
+	cin>>a;
+	for(int i=0;i<a;i++)
+	{
+		cin>>ar[i];
+	}
+	int maxx=0,minn=101;
+	for(int i=0;i<a;i++)
+	{
+		if(ar[i]>maxx)
+		{
+			maxx=ar[i];
+			m1=i;
+		}
+		if(ar[i]<minn)
+		{
+			minn=ar[i];
+			m2=i;
+		}
+	}
+	a=a-1;
+	if(m1>m2)
+	{
+		m2=m2+1;
+	}
+	cout<<(m1+a-m2)<<endl;
+	return 0;
+}
