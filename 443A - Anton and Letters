@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int l,c,d=0;
+	char a[10000];
+	gets(a);
+	l=strlen(a);
+	sort(a,a+l);
+	for(int i=0;i<l;i++)
+	{
+		if(a[i]>96&&a[i]<123)
+		{
+			d++;
+			if(a[i]==a[i+1])
+			d--;
+		}
+	}
+	cout<<d<<endl;
+	return 0;
+}
