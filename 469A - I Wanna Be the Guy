@@ -1,0 +1,29 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int a,b,c,ar[200];
+	cin>>a>>b;
+	int ca=0;
+	for(int i=0;i<b;i++)
+	{
+		cin>>ar[i];
+	}
+	cin>>c;
+	for(int i=b;i<b+c;i++)
+	{
+		cin>>ar[i];
+	}
+	sort(ar,ar+(b+c));
+	for(int i=0;i<b+c;i++)
+	{
+		if(ar[i]!=ar[i+1])
+			ca++;
+	}
+	   if(a == ca){
+        cout << "I become the guy." <<endl;
+    }else{
+        cout << "Oh, my keyboard!" << endl;
+    }
+
+}
