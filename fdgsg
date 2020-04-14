@@ -1,0 +1,19 @@
+
+#include <iostream>
+using namespace std;
+ 
+void solve(){
+    int n, a, b, i, j; cin >> n >> a >> b;
+    char ch = 'a';
+    for(i=0; i<n; ++i){
+        if(i%b==0) ch = 'a';
+        cout << ch++;
+    }
+    cout << "\n";
+    return;
+}
+ 
+int main(){
+    int t; cin >> t;
+    while(t--) solve();
+}
