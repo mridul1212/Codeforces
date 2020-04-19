@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int a,b;
+	cin>>a>>b;
+	int ar[a],t=0;
+	for(int i=0;i<a;i++)
+	{
+		cin>>ar[i];
+	}
+	for(int i=0;i<a-1;i++)
+		t=max(t,ar[i]-ar[i+1]-b);
+	cout<<t<<endl;
+	return 0;
+}
