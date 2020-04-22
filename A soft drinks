@@ -1,0 +1,15 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+	int a,b,c,d,a1,a2,a3,a4,b1,b2,b3,d4,d5,d6;
+	cin>>a>>b>>c>>d>>a1>>a2>>a3>>a4;
+	b1=(b*c);
+	b2=b1/a3;
+	b3=d*a1;
+	d4=a2/a4;
+	d5=min(b2,b3);
+	d6=min(d4,d5);
+	cout<<d6/a<<endl;
+}
