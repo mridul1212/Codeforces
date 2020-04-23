@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int a,b,c,d,e=1,f=0;
+	cin>>a>>b;
+	while(a--)
+	{
+		cin>>c>>d;
+			e+=b*((c-e)/b);
+			f+=(d-e+1);
+			e=d+1;
+	}
+	cout<<f<<endl;
+return 0;
+}
