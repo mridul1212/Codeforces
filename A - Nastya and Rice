@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a;
+    cin>>a;
+    int n,b,c,x,y,a1,a2,a3,a4;
+    while(a--)
+	{
+		cin>>n>>b>>c>>x>>y;
+		a1=(b-c)*n;
+		a2=(b+c)*n;
+		a3=(x-y);
+		a4=(x+y);
+		if(a1>a4||a2<a3)
+			cout<<"No"<<endl;
+		else
+			cout<<"Yes"<<endl;
+
+	}
+	return 0;
+}
