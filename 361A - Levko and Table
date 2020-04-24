@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define cc cin
+#define co cout
+#define bai_ra return
+int main()
+{
+	int a,b;
+	cc>>a>>b;
+	for(int i=0;i<a;i++)
+	{
+		for(int j=0;j<a;j++)
+		{
+			if(i==j)
+			{
+				co<<b<<" ";
+			}
+			else
+				co<<0<<" ";
+		}
+		co<<endl;
+	}
+	bai_ra 0;
+}
+
