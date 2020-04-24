@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define cc cin
+#define co cout
+#define bai_ra return
+int main()
+{
+	int a,b,c,d,a1,a2,a3,a4=0;
+	cc>>a>>b>>c>>d;
+	a1=min(b,min(c,d));
+	a2=a/a1;
+	for(int  i=a2;i>=0;i--)
+	{
+		for(int j=0;j<=a2;j++)
+		{
+			a3=abs((a-(b*i+c*j))/d);
+			if((b*i+c*j+d*a3)==a)
+			{
+				a4=max(a4,(i+j+a3));
+			}
+		}
+	}
+	cout<<a4<<endl;
+	bai_ra 0;
+}
+
