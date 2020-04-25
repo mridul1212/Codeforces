@@ -1,0 +1,14 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define cc cin
+#define co cout
+#define bai_ra return
+int main()
+{
+	char a[3][4];
+	 scanf("%s%s%s", a[0], a[1], a[2]);
+	 printf(a[0][0] == a[2][2] && a[0][1] == a[2][1] && a[0][2] == a[2][0] && a[1][0] == a[1][2] ? "YES\n" : "NO\n");
+
+
+	bai_ra 0;
+}
