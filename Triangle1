@@ -1,0 +1,14 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int a,b,c,d;
+	cin>>a>>b>>c>>d;
+	if((a+b>c&&a+c>b&&a<b+c)||(a+b>d&&a+d>b&&a<b+d)||(a+c>d&&a+d>c&&a<c+d)||(d+b>c&&d+c>b&&d<b+c))
+		cout<<"TRIANGLE"<<endl;
+	else if((a+b==c||a+c==b||a==b+c)||(a+b==d||a+d==b||a==b+d)||(a+c==d||a+d==c||a==c+d)||(d+b==c||d+c==b||d==b+c))
+		cout<<"SEGMENT"<<endl;
+	else
+		cout<<"IMPOSSIBLE"<<endl;
+	return  0;
+}
