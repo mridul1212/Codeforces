@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define cc cin
+#define co cout
+#define bai_ra return
+int main()
+{
+    int a[4]= {0};
+    int t,x,y;
+        freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+    cc>>t;
+    a[t]=1;
+    cc>>x>>y;
+    swap(a[x],a[y]);
+    cc>>x>>y;
+    swap(a[x],a[y]);
+    cc>>x>>y;
+    swap(a[x],a[y]);
+    co<<find(a+1,a+3+1,1)-a<<endl;
+   
+
+    bai_ra 0;
+}
+
