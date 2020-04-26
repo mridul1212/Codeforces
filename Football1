@@ -1,0 +1,31 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int a,c=0;
+	string s,t;
+	cin>>a;
+	while(a--)
+	{
+		if(c!=0)
+		{
+			cin>>s;
+			if(s==t)
+			{
+				c+=1;
+			}
+			else
+			{
+				c-=1;
+
+			}
+		}
+		else
+		{
+			cin>>t;
+			c=1;
+		}
+	}
+	cout<<t<<endl;
+	return 0;
+}
