@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define cc cin
+#define co cout
+
+#define bai_ra return
+int main()
+{
+	string s1,s2;
+	cc>>s1>>s2;
+	for(size_t i=0; i<s1.length();i++)
+	{
+		if(s1[i]==s2[i])
+		{
+			s1[i]='0';
+		}
+		else
+			s1[i]='1';
+	}
+	co<<s1<<endl;
+	bai_ra 0;
+}
+
