@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define cc cin
+#define co cout
+
+#define bai_ra return
+int main()
+{
+    long double n;
+    cc>>n;
+    n=abs(n);
+    if(n<=127)
+        co<<"byte"<<endl;
+    else if(n<=32767)
+        co<<"short"<<endl;
+    else if(n<=2147483647)
+        co<<"int"<<endl;
+    else if(n<=9223372036854775807)
+        co<<"long"<<endl;
+    else
+        co<<"BigInteger"<<endl;
+
+    bai_ra 0;
+}
