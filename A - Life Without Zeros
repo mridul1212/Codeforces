@@ -1,0 +1,38 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define cc cin
+#define co cout
+#define lo long long int
+#define N int
+#define SS string
+#define bai_ra return
+#define EE endl
+lo rev(lo a)
+{
+	SS s=to_string(a);
+	SS s1;
+	N n = s.length();
+	for(N i=0;i<n;i++)
+	{
+		if(s[i]!='0')
+		{
+			s1+=s[i];
+		}
+	}
+	bai_ra stoll(s1);
+}
+int main()
+{
+	lo a,b,c;
+	cc>>a>>b;
+	c=a+b;
+	lo a1=rev(a);
+	lo a2=rev(b);
+	lo c2=rev(c);
+	if((a1+a2)==c2)
+		co<<"YES"<<EE;
+		else
+			co<<"NO"<<EE;
+	bai_ra 0;
+}
+
