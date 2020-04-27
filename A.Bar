@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define cc cin
+#define co cout
+#define bai_ra return
+int main()
+{
+    int a,c=0,i=0;
+    char s[100];
+    cc>>a;
+    while(i++<a)
+    {
+        cin>>s;
+        if(isdigit(s[0]) && atoi(s)<18) c++;
+        else if(strcmp(s,"ABSINTH")==0 || strcmp(s,"BEER")==0 || strcmp(s,"BRANDY")==0 || strcmp(s,"CHAMPAGNE")==0
+                || strcmp(s,"GIN")==0 || strcmp(s,"RUM")==0 || strcmp(s,"SAKE")==0 || strcmp(s,"TEQUILA")==0
+                || strcmp(s,"VODKA")==0 || strcmp(s,"WHISKEY")==0 || strcmp(s,"WINE")==0) c++;
+    }
+    co<<c<<endl;
+    bai_ra 0;
+}
+
