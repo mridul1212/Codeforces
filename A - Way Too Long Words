@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define cc cin
+#define co cout
+#define lo long long int
+#define N int
+#define SS string
+#define bai_ra return
+#define EE endl
+int main()
+{
+	N a;
+	cc>>a;
+	SS b;
+	while(a--)
+	{
+		cc>>b;
+		if(b.size()>10)
+			co<<b[0]<<b.size()-2<<b[b.size()-1]<<EE;
+		else
+			co<<b<<EE;
+	}
+	bai_ra 0;
+}
