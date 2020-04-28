@@ -1,0 +1,34 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define cc cin
+#define co cout
+#define lo long long int
+#define N int
+#define SS string
+#define bai_ra return
+#define EE endl
+int main()
+{
+	SS s;
+	cc>>s;
+	N a=1;
+	for( N i=1;i<=s.size();i++)
+	{
+		if(s[i]==s[i-1])
+		{
+			a+=1;
+			if(a==7)
+			{
+				co<<"YES"<<EE;
+				bai_ra 0;
+			}
+		}
+		else
+		{
+			a=1;
+		}
+	}
+	co<<"NO"<<EE;
+	bai_ra 0;
+}
+
