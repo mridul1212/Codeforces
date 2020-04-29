@@ -1,0 +1,30 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define cc cin
+#define co cout
+#define lo long long int
+#define N int
+#define SS string
+#define bai_ra return
+#define EE endl
+int main()
+{
+	SS a;
+	cc>>a;
+    size_t n=a.find('.');
+    if(a[n-1]=='9')
+	{
+		co<<"GOTO Vasilisa."<<EE;
+	}
+	else{
+		if(a[n+1]>='5')
+		{
+			a[n-1]+=1;
+		}
+		a.erase(a.begin()+n,a.end());
+		co<<a<<EE;
+	}
+
+	bai_ra 0;
+}
+
