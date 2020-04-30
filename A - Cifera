@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define cc cin
+#define co cout
+#define lo long long int
+#define N int
+#define SS string
+#define bai_ra return
+#define EE endl
+int main()
+{
+	N a,b,c=-1;
+	cc>>a>>b;
+	while(b%a==0)
+	{
+		b/=a;
+		c+=1;
+	}
+	if(c>=0&&b==1)
+	{
+		co<<"YES"<<EE<<c<<EE;
+	}
+	else
+		co<<"NO"<<EE;
+	bai_ra 0;
+}
