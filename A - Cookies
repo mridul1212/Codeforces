@@ -1,0 +1,29 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define cc cin
+#define co cout
+#define lo long long int
+#define N int
+#define SS string
+#define bai_ra return
+#define EE endl
+int main()
+{
+	N n,a,d=0,e=0;
+	cc>>n;
+	while(n--)
+	{
+		cc>>a;
+		if(a%2==0)
+		{
+			e+=1;
+		}
+		else
+		{
+			d+=1;
+		}
+	}
+	co<<(d%2==1?d:e)<<EE;
+	bai_ra 0;
+}
+
