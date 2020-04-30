@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define cc cin
+#define co cout
+#define lo long long int
+#define N int
+#define SS string
+#define bai_ra return
+#define EE endl
+int main()
+{
+	N a;
+	cc>>a;
+	N c=0,c1=0;
+	for(int i=0;i<a;i++)
+	{
+		N n,m;
+		cc>>n>>m;
+		c-=n;
+		c+=m;
+		c1=max(c1,c);
+	}
+	co<<c1<<EE;
+	bai_ra 0;
+}
+
