@@ -1,0 +1,30 @@
+
+#include<bits/stdc++.h>
+using namespace std;
+#define cc cin
+#define co cout
+#define lo long long int
+#define N int
+#define SS string
+#define bai_ra return
+#define EE endl
+int main()
+{
+	N a,b;
+	cc>>a>>":">>b;
+	do{
+		b++;
+		if(b==60)
+		{
+			a++;
+			b=0;
+		}
+		if(a==24)
+		{
+			a=0;
+		}
+	}
+	while(a%10*10+a/10!=b);
+	   printf("%02d:%02d\n", a, b);
+	bai_ra 0;
+}
