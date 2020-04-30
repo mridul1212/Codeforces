@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define cc cin
+#define co cout
+#define lo long long int
+#define N int
+#define SS string
+#define bai_ra return
+#define EE endl
+int main()
+{
+	SS s;
+	cc>>s;
+	N len =s.length();
+	N a=count(s.begin(),s.end(),'4');
+	N b=count(s.begin(),s.end(),'7');
+	if(a+b==4||a+b==7)
+		co<<"YES"<<EE;
+	else
+		co<<"NO"<<EE;
+	bai_ra 0;
+}
+
