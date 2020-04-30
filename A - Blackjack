@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define cc cin
+#define co cout
+#define lo long long int
+#define N int
+#define SS string
+#define bai_ra return
+#define EE endl
+int main()
+{
+	N a;
+	cc>>a;
+	if(a<=10||a>21)
+	co<<0<<endl;
+	else if(a==20)
+		co<<15<<EE;
+	else
+		co<<4<<EE;
+	bai_ra 0;
+}
+
