@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define cc cin
+#define co cout
+#define lo long long int
+#define N int
+#define SS string
+#define bai_ra return
+#define EE endl
+int main()
+{
+	SS a,b,c,d;
+	cc>>a>>b>>c;
+	d=a+b;
+	sort(c.begin(),c.end());
+	sort(d.begin(),d.end());
+	if(d==c)
+		co<<"YES"<<EE;
+	else
+		co<<"NO"<<EE;
+	bai_ra 0;
+}
+
