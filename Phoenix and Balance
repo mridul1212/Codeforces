@@ -1,0 +1,73 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define cc cin
+#define co cout
+#define lo long long int
+#define N int
+#define SS string
+#define bai_ra return
+#define EE endl
+int main()
+{
+	N a,n;
+	cc>>a;
+	for(N i=0;i<a;i++)
+	{
+		cc>>n;
+		if(n==2)
+			co<<2<<EE;
+	 if(n==4)
+			co<<6<<EE;
+	if (n==6)
+		co<<14<<endl;
+	if(n==8)
+		co<<30<<EE;
+	if(n==10)
+	{
+		co<<62<<EE;
+	}
+	if(n==12)
+	{
+		co<<126<<EE;
+	}
+	if(n==14)
+	{
+		co<<(126*2)+2<<EE;
+	}
+	if(n==16)
+	{
+		co<<(254*2)+2<<EE;
+	}
+	if(n==18)
+	{
+		co<<(510*2)+2<<EE;
+	}
+	if(n==20)
+	{
+		co<<(1022*2)+2<<EE;
+	}
+	if(n==22)
+	{
+		co<<(2046*2)+2<<EE;
+	}
+	if(n==24)
+	{
+		co<<(4094*2)+2<<EE;
+	}
+	if(n==26)
+	{
+		co<<(8190*2)+2<<EE;
+	}
+	if(n==28)
+	{
+		co<<(16382*2)+2<<EE ;
+	}
+	if(n==30)
+	{
+		co<<(32766*2)+2<<EE;
+	}
+
+	}
+	bai_ra 0;
+}
+
