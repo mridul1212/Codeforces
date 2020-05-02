@@ -1,0 +1,34 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define cc cin
+#define co cout
+#define lo long long int
+#define N int
+#define SS string
+#define bai_ra return
+#define EE endl
+int main()
+{
+	N a,c=0;
+	cc>>a;
+	N ar[a];
+	for(N i=0;i<a;i++)
+		cc>>ar[i];
+	N max1=ar[0];
+	N min1=ar[0];
+	for(N i=0;i<a;i++)
+	{
+		if(ar[i]>max1)
+		{
+			max1=ar[i];
+			c++;
+		}
+		if(ar[i]<min1)
+		{
+			min1=ar[i];
+			c++;
+		}
+	}
+	co<<c<<EE;
+	bai_ra 0;
+}
