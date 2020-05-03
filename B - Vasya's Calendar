@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define cc cin
+#define co cout
+#define lo long long int
+#define N int
+#define SS string
+#define bai_ra return
+#define EE endl
+int main()
+{
+	N ar[2002],a,n,r=0;
+	cc>>a;
+	cc>>n;
+	for(N i=0;i<n;i++)
+	{
+		cc>>ar[i];
+	}
+	for(N i=0;i<n-1;i++)
+	{
+		r+=a-ar[i];
+	}
+	co<<r<<EE;
+	bai_ra 0;
+}
+
