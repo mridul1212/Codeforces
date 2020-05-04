@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define cc cin
+#define co cout
+#define lo long long int
+#define N int
+#define SS string
+#define bai_ra return
+#define EE endl
+int main()
+{
+	N a;
+	double n,s,p,d;
+	cc>>a;
+	for(N i=0;i<a;i++)
+	{
+		cc>>n;
+		s=n/100;
+		p+=s;
+	}
+	d=p/a;
+	d=d*100;
+	co<<d<<EE;
+	bai_ra 0;
+}
