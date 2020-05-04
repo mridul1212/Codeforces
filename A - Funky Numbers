@@ -1,0 +1,33 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define cc cin
+#define co cout
+#define lo long long int
+#define N int
+#define SS string
+#define bai_ra return
+#define EE endl
+int const W = 1e5 + 1;
+long long ar[W];
+int main()
+{
+	N a;
+	cc>>a;
+	ar[0]=0;
+	for(N i=0;i<W;i++)
+	{
+		ar[i]=ar[i-1]+i;
+	}
+	for(N i=1;i<W;i++)
+	{
+		if(binary_search(ar+1,ar+W,a-ar[i]))
+		{
+			co<<"YES"<<EE;
+			return 0;
+		}
+	}
+
+	co<< "NO" <<EE;
+	bai_ra 0;
+}
+
