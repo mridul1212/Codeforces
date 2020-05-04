@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define cc cin
+#define co cout
+#define lo long long int
+#define N int
+#define SS string
+#define bai_ra return
+#define EE endl
+int main()
+{
+	N a,b,c,d;
+	cc>>a>>b;
+	if(a==0&&b>0)
+		co<<"Impossible"<<EE;
+	else if(a>0&&b==0)
+		co<<a<<" "<<a<<EE;
+	else if(a==0&&b==0)
+		co<<a<<" "<<a<<EE;
+	else{
+		c=max(a,b);
+		d=(a+=b-1);
+		co<<c<<" "<<d<<EE;
+	}
+	bai_ra 0;
+}
+
