@@ -1,0 +1,29 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define cc cin
+#define co cout
+#define lo long long int
+#define N int
+#define SS string
+#define bai_ra return
+#define EE endl
+int main()
+{
+	SS a;
+	char ch='a'-1;
+	cc>>a;
+	N l=a.size(),t=0;
+	for(N i=0;i<l;i++)
+	{
+		if(a[i]==ch) t++;
+		else if(a[i]>ch)
+			{
+				t=1;
+		ch=a[i];
+			}
+	}
+	while(t--) co<<ch;
+	co<<EE;
+	bai_ra 0;
+}
+
