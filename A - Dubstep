@@ -1,0 +1,34 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define cc cin
+#define co cout
+#define lo long long int
+#define N int
+#define SS string
+#define bai_ra return
+#define EE endl
+int main()
+{
+	SS a;
+	N f=1;
+	cc>>a;
+	for(N i=0;i<a.size();i++)
+	{
+		if(a[i]=='W'&&a[i+1]=='U'&&a[i+2]=='B')
+		{
+			i+=2;
+			if(!f)
+			{
+				co<<" ";
+			}
+			continue;
+		}
+		else{
+			f=0;
+			co<<a[i];
+		}
+	}
+	co<<EE;
+	bai_ra 0;
+}
+
