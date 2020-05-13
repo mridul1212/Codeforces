@@ -1,0 +1,42 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define cc cin
+#define co cout
+#define lo long long int
+#define N int
+#define SS string
+#define bai_ra return
+#define EE endl
+#define yo cout<<"YES"<<endl
+#define yn cout<<"NO"<<endl
+#define pii acos(-1.0)
+#define sp cout<<" "
+inline void filee()
+{
+	freopen("input.txt","r",stdin);
+	freopen("output.txt","w", stdout);
+
+}
+
+int main()
+{
+	N n;
+	cc>>n;
+	vector<int> a(n),b(n);
+	for(N i=0;i<n;i++)
+	{
+		cc>>a[i]>>b[i];
+	}
+	N c=0;
+	for(N i=0;i<n;i++)
+	{
+		for( N j=0;j<n;j++)
+		{
+			if(i!=j&&b[i]==a[j])
+				c++;
+		}
+	}
+	co<<c<<EE;
+	bai_ra 0;
+}
+
