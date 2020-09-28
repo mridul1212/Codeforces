@@ -1,0 +1,33 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int t;
+    cin>>t;
+    while(t--)
+    {
+
+        int a,b;
+        cin>>a>>b;
+        int ar[2][2];
+        bool k=0;
+        for(int l=0;l<a;l++)
+        {
+            for(int i=0;i<2;i++)
+            {
+                for(int j=0;j<2;j++)
+                    cin>>ar[i][j];
+            }
+            if(ar[0][1]==ar[1][0])
+                k=1;
+        }
+        if(b%2!=0)
+            k=0;
+        if(k)
+            cout<<"YES"<<endl;
+        else
+            cout<<"NO"<<endl;
+    }
+    return 0;
+
+}
