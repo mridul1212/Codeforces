@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    long long t;
+    cin>>t;
+     t++;
+    if(t==1)
+        cout<<0<<endl;
+
+    else if(t%2==0)
+        cout<<t/2<<endl;
+    else
+        cout<<t<<endl;
+    return 0;
+}
