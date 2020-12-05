@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+
+  int t;
+  cin>>t;
+  while(t--)
+  {
+      long long int n;
+      cin>>n;
+       long long int ans = 0;
+       long long int z = n / 2;
+        for(int i = n; i > 0; i -= 2){
+            ans += (i - 1) * 4 * z;
+            z--;
+        }
+        cout << ans << '\n';
+
+  }
+
+  return 0;
+}
