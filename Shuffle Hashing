@@ -1,0 +1,31 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+	int t;
+	cin>>t;
+	while(t--)
+    {
+        string s,p;
+        cin>>s>>p;
+        sort(s.begin(),s.end());
+        int ans=0;
+        for(int i=0;i+s.size()<=p.size();i++)
+        {
+            string a=p.substr(i,s.size());
+            sort(a.begin(),a.end());
+            if(s==a)
+                ans=1;
+        }
+        if(ans==1)
+            cout<<"YES"<<endl;
+        else cout<<"NO"<<endl;
+
+
+    }
+
+	return 0;
+}
+
+
