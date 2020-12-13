@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int t;
+    cin>>t;
+
+    while(t--)
+        {
+            long long int a,b,n,S;
+            cin >> a >> b >> n >> S;
+            int q = min(a, S / n);
+            if (S - q*n > b)
+                {
+                    cout << "NO\n";
+                    continue;
+                }
+            else cout << "YES\n";
+        }
+    return 0;
+}
