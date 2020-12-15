@@ -1,0 +1,18 @@
+#include<bits/stdc++.h>
+using namespace std;
+int gcd(int x,int y){
+	if(y==0) return x;
+	return gcd(y,x%y);
+}
+int main()
+{
+    int N; scanf("%d", &N);
+    while(N--)
+    {
+        int a, b; scanf("%d%d", &a, &b);
+        int x=gcd(a,b);
+        if(x==1)
+        puts("Finite");
+        else puts("Infinite");
+    }
+}
