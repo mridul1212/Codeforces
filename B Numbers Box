@@ -1,0 +1,28 @@
+#include<bits/stdc++.h>
+using namespace std;
+ 
+int main()
+{
+    int t,l,n,m,sol,minim,k,i,j,x;
+    cin>>t;
+    for(l=1; l<=t; l++)
+        {
+            cin>>n>>m;
+            sol=0;
+            k=0;
+            minim=1000;
+            for(i=1; i<=n; i++)
+                for(j=1; j<=m; j++)
+                    {
+                        cin>>x;
+                        sol+=abs(x);
+                        if(x<0)
+                            k++;
+                        minim=min(minim,abs(x));
+                    }
+            if(k%2==1)
+                sol-=2*minim;
+            cout<<sol<<'\n';
+        }
+    return 0;
+}
