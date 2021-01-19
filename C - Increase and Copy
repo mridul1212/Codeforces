@@ -1,0 +1,25 @@
+
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long
+
+int main(){
+
+int t; ll n;
+
+    cin >> t;
+    while(t--){
+        cin >> n;
+        ll m = sqrt(n);
+        if(m*m==n){
+            cout << 2*m - 2 << endl;
+        }
+        else if(n<=m*m+m){
+            cout << 2*m - 1 << endl;
+        }
+        else{
+            cout << 2*m << endl;
+        }
+    }
+    return 0;
+}
