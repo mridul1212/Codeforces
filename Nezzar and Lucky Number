@@ -1,0 +1,33 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+
+int main(){
+	int tt;
+	cin >> tt;
+	while(tt --){
+		int q, t;
+		cin >> q >> t;
+		while(q --){
+			int n;
+			cin >> n;
+			if (n >= 10 * t){
+				cout << "YES" << endl;
+			}
+			else{
+				bool res = false;
+				while(n > 0){
+					if (n % 10 == t){
+						res = true;
+					}
+					n -= t;
+				}
+				if (res){
+					cout << "YES" << endl;
+				}
+				else cout << "NO" << endl;
+			}
+		}
+	}
+	return 0;
+}
