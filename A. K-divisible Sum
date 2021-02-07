@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+
+int main(){
+	int tt;
+	cin >> tt;
+	while(tt --){
+	 int a,k;
+	cin>>a>>k;
+	if(a%k==0)
+        cout<<1<<endl;
+    else
+        cout<<max(2,(k+a-1)/a)<<endl;
+	}
+	return 0;
+}
